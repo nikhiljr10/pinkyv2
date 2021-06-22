@@ -21,3 +21,4 @@ Asena.addCommand({pattern: 'compliment ?(.*)', fromMe: false, desc: ' get a comp
 	} catch {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}
+}
