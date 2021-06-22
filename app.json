@@ -3,9 +3,9 @@
     "description": "pinky  - re-edited from asena. World’s first UserBot made for WhatsApp.",
     "logo": "https://i.hizliresim.com/6Bbj7i.jpg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/afnanplk/pinky.v2",
-    "website":   "https://t.me/phaticusthiccy",
-    "success_url": "https://t.me/AsenaSupport",
+    "repository": "https://avatars.githubusercontent.com/u/83832372?v=4",
+    "website":   "under maintenance",
+    "success_url": "under maintenance",
     "stack": "container",
     "env": {
         "ASENA_SESSION": {
