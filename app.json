@@ -17,7 +17,7 @@
             "required": false
         },
         "LANGUAGE": {
-            "description": "only english language is available
+            "description": "only english language is available"
             "required": true,
             "value": "en"
         },
