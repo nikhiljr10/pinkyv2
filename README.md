@@ -63,32 +63,6 @@ Marketing WhatsAsena for money, making it available or having any material value
 the user is responsible.
 ```
 
-<div align="center">
-  <img src="https://i.hizliresim.com/mm1NBs.jpg" width="200" height="200">
-  <h1>🐺 WhatsAsena Duplicated</h1>
-</div>
-<p align="center">
-    WhatsAsena project - Makes it easy and fun to use Whatsapp. Also first userbot for Whatsapp.
-    <br>
-        <a href="https://t.me/WHATSASENA">Telegram Channel</a> |
-        <a href="https://t.me/AsenaSupport">Telegram Group</a> |
-        <a href="https://t.me/asenaremaster">New Support Group</a> |
-        <a href="https://t.me/unofficialplugin">New Plugin Channel</a> |
-    <br>
-</p>
-
-----
-![Docker Pulls](https://img.shields.io/docker/pulls/fusuf/whatsasena?style=flat-square) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/fusuf/whatsasena?style=flat-square)
-
-## 📢 Guide
-> [Also for support & help please come our Telegram group.](https://t.me/AsenaSupport) (Legacy)
-
-> [New support & help group.](https://t.me/asenaremaster) (New)
-
-> [Install Guide/Kurulum Yardımcısı/Qurulum Müavin](https://github.com/phaticusthiccy/WhatsAsenaDuplicated/wiki)
-
-## 🔎 What is WhatsAsena?
-**WhatsAsena,** is a WhatsApp helper bot written by [Yusuf Usta](https://github.com/Quiec) and edited by [Phaticusthiccy](https://github.com/phaticusthiccy). Does not log into your account It is written on WhatsApp Web API.
 
 ## Setup
 ### Very Simple Method
@@ -100,16 +74,6 @@ the user is responsible.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/phaticusthiccy/WhatsAsenaDuplicated)
 
-### The Hard Method
-```js
-$ git clone https://github.com/phaticusthiccy/WhatsAsenaDuplicated.git
-$ cd WhatsAsenaDuplicated
-$ npm i
-$ nano Config.env
-// Config.env oluşturun ve düzenleyin.
-// Config.env create and edit.
-$ node bot.js
-```
 
 ##
 
@@ -129,11 +93,6 @@ If you are concerned about security, you can install it on your own computer. If
 ### Is it paid?
 **Of course not.** It will never happen. But you can donate to us. You can reach me via [Telegram](https://t.me/fusuf) .
 
-### What does Asena mean?
-[Asena](https://tr.wikipedia.org/wiki/Asena), comes from Turkish mythology. According to Turkish mythology, Asena is a she-wolf that plays an important role.
-
-##
-
 ### ⚠️ Warning! 
 ```
 Due to Userbot; Your WhatsApp account may be banned.
@@ -148,6 +107,15 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
 ----|----|----|----|----
 [Yusuf Usta](https://t.me/fusufs) | [Phaticusthiccy](https://github.com/phaticusthiccy) | [Alperen Ç](https://t.me/xacnio) | [justinthoms](https://t.me/Mr_justinthomas) | [CW4RR10R](https://github.com/CW4RR10R)
 Author, Base, Bug Fixes, Modules | Developer, Base, Bug Fixes, Modules | Bug Fixes, Modules, Idea | Modules, Idea | Modules
+  
+## More Developers
+  <div align="center">
+    
+  [![Farhan-Dqz](https://github.com/farhan-dqz.png?size=100)](https://github.com/farhan-dqz) |  [![TOXIC4L!3N](https://github.com/Alien-alfa.png?size=100)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=100)](https://github.com/afnanplk) 
+----|----|----
+[farhan-dqz](https://github.com/farhan-dqz)  | [TOXIC4L!3N](https://github.com/AI-VIKI) | [afnanplk](https://github.com/afnanplk)
+Base, Bug Fixes, Modules | Modifiying  as   public | Bug Fixes, Modules
+  </div>
 
 ## Thanks To
 - [@adiwajshing](https://github.com/adiwajshing) for coded [Baileys](https://github.com/adiwajshing/Baileys) 
