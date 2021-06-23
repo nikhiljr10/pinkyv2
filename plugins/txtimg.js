@@ -129,15 +129,15 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
     var command_cmd = ''
     var desc_cmd = ''
     if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
-        usage_cmd = '⌨️ *Örnek:* _'
-        command_cmd = '💻 *Komut:* '
-        desc_cmd = 'ℹ️ *Açıklama:* _'
+        usage_cmd = '📍 *Örnek:* _'
+        command_cmd = '🔖 *Komut:* '
+        desc_cmd = '♦️*Açıklama:* _'
     } else { 
-        usage_cmd = '*⌨️ Example:* _'
-        command_cmd = '💻 *Command:* '
-        desc_cmd = 'ℹ️ *Description:* _'
+        usage_cmd = '*📍 Example:* _'
+        command_cmd = '🔖 *Command:* '
+        desc_cmd = '♦️ *Description:* _'
     }
-    const msg = command_cmd + '```.textdevil``` \n' + t1 + '_\n' + usage_cmd + '.textdevil PLK_\n\n' +
+    const msg = command_cmd + '```.textdevil``` \n' + t1 + '_\n' + usage_cmd + '```.textdevil PLK_\n\n```' +
         command_cmd + '```.textbear``` \n' + desc_cmd + t2 + '_\n' + usage_cmd + '.textbear PLK_\n\n' +
         command_cmd + '```.textwolf``` \n' + desc_cmd + t10 + '_\n' + usage_cmd + '.textwolf Developer;PLK_\n\n' +
         command_cmd + '```.textneon```\n' + desc_cmd + t3 + '_\n' + usage_cmd + '.textneon PLK_\n\n' +
