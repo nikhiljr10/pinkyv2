@@ -36,7 +36,7 @@ Asena.addCommand({pattern: 'sha', fromMe: false, desc: 'Shazam plugin'}, (async 
                 ...form.getHeaders()
             }
         }
-        await axios.post('https://api.audd.io/', form, configs).then(async (response) => {
+        await axios.post('https://api.audd.io/recognizeWithOffset', form, configs).then(async (response) => {
             var res = response.data
             if (res === 'success') {
                 await message.client.sendMessage(message.jid, `Title: ${res.title}\nArtist: ${res.artist}`, MessageType.text);
