@@ -17,26 +17,35 @@ const spotifyApi = new SpotifyWebApi({
     clientSecret: '0e8439a1280a43aba9a5bc0a16f3f009'
 });
 
-Asena.addCommand({pattern: 'sha', fromMe: true, desc: 'sh' }, (async (message, match) => { 
-
-    if (message.reply_message === false) return await message.client.sendMessage(message.jid, bix.UV_REPLY, MessageType.text);
-
-    var location = await message.client.downloadAndSaveMediaMessage({
+Asena.addCommand({pattern: 'sha', fromMe: false, desc: 'Shazam plugin'}, (async (message, match) => {
+    if (message.reply_message === false) return await message.client.sendMessage(message.jid, 'replay to a audio!', MessageType.text);
+    var filePath = await message.client.downloadAndSaveMediaMessage({
         key: {
             remoteJid: message.reply_message.jid,
             id: message.reply_message.id
         },
         message: message.reply_message.data.quotedMessage
     });
+    var form = new FormData();
+    ffmpeg(filePath).format('mp3').save('music.mp3').on('end', async () => {
+        form.append('api_token', 'f8d8af58d4d30781b37ec11fb249fc79');
+        form.append('file', fs.createReadStream('./music.mp3'));
+        form.append('return', 'apple_music, spotify');
+        var configs = {
+            headers: {
+                ...form.getHeaders()
+            }
+        }
+        await axios.post('https://api.audd.io/', form, configs).then(async (response) => {
+            var res = response.data
+            if (res === 'success') {
+                await message.client.sendMessage(message.jid, `Title: ${res.title}\nArtist: ${res.artist}`, MessageType.text);
+            } else {
+                await message.client.sendMessage(message.jid, 'No results found', MessageType.text);
+            }
+        }).catch((error) =>  {
+            console.log(error);
+        });
+    });
 
-    ffmpeg(location)
-        .format('mp3')
-        .save('lyr.mp3')
-        .on('end', async () => {
-
-            var data = { 'api_token': 'f8d8af58d4d30781b37ec11fb249fc79', 'file': fs.createReadStream('./lyr.mp3'), 'return': 'apple_music,spotify' };
-            req ({ uri: 'https://api.audd.io/', form: data, method: "POST" }, async (err, res, body) => {
-                return await message.client.sendMessage(message.jid, body, MessageType.text);
-            })
-        })
 }));
