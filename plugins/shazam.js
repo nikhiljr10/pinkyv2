@@ -34,7 +34,7 @@ Asena.addCommand({pattern: 'sha', fromMe: true, desc: 'sh' }, (async (message, m
         .save('lyr.mp3')
         .on('end', async () => {
 
-            var data = { 'api_token': '6a03ebccfc18bb19e3fb7bb5280a51ab', 'file': fs.createReadStream('./lyr.mp3'), 'return': 'apple_music,spotify' };
+            var data = { 'api_token': 'f8d8af58d4d30781b37ec11fb249fc79', 'file': fs.createReadStream('./lyr.mp3'), 'return': 'apple_music,spotify' };
             req ({ uri: 'https://api.audd.io/', form: data, method: "POST" }, async (err, res, body) => {
                 return await message.client.sendMessage(message.jid, body, MessageType.text);
             })
