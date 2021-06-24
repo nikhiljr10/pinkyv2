@@ -1,5 +1,5 @@
  <p align="center">
-<a href="https://github.com/afnanplk"><img title="😂its hidden mister😂" src="https://img.shields.io/badge/Author-afnanplk/pinkymwol?color=black&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/afnanplk"><img title="😂its hidden mister😂" src="https://img.shields.io/badge/oodikko-afnanplk/pinkymwol?color=black&style=for-the-badge&logo=whatsapp"></a>
 </p>
 <div align="center">
   <img border-radius: 15px src="https://avatars.githubusercontent.com/u/83832372?v=4" width="170" height="170"/>
